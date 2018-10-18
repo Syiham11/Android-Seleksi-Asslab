@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D7D7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="100dp"
+        android:text="SELAMAT DATANG"
+        android:textAlignment="center"
+        android:textColor="#352F70"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/mulaiTes"
+            android:layout_width="420dp"
+            android:layout_height="198dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:elevation="0dp"
+            android:onClick="MulaiTes"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mulaites" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="Logout"
+            android:scaleType="fitCenter"
+            android:src="@drawable/keluar" />
+
+        <ImageButton
+            android:id="@+id/tmbhSoal"
+            android:layout_width="37dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="Tambah"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tambahsoal" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Soal ujian terdiri dari 10 soal pilihan ganda (multiple choice).
+            Bacalah soal - soal dengan seksama sebelum Anda menjawabnya.
+            Isilah soal dengan jawaban yang paling tepat!"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

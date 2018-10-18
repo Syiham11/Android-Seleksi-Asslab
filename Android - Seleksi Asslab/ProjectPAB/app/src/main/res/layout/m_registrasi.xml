@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3E5F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENDAFTARAN ASISTEN LABORATORIUM"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Pribadi"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fnim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nim" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fnama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nama" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/falamat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Alamat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <!-- <RadioGroup
+        android:id="@+id/fjk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/flaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/fperempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perempuan" />
+    </RadioGroup> -->
+
+        <EditText
+            android:id="@+id/fjk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ftgl_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tanggal Lahir"
+            android:onClick="setTanggal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program Studi"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fprodi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:hint="Pilih Prodi"
+            android:onClick="pilihprodi" />
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelas"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fkelas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Kelas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/femail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="E-mail" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No HP"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fnohp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="No hp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fusername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:onClick="simpanPendaftaran"
+            android:text="DAFTAR"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>
